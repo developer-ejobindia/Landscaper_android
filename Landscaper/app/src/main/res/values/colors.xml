@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#11C49D</color>
+    <color name="colorPrimaryDark">#11C49D</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorProgress">#11C49D</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorLabel">#9f9f9f</color>
+    <color name="colorText">#3d3d3d</color>
+    <color name="colorUnderLine">#e3e3e3</color>
+    <color name="colorNavBg">#262626</color>
+    <color name="colorNavText">#898383</color>
+    <color name="colorActiveNavText">#13c49e</color>
+    <color name="colorProfileText">#6c6c6c</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorFlatRed">#de4d4f</color>
+    <color name="colorDecline">#ECECEC</color>
+    <color name="colorAddServiceTitle">#EDF2F6</color>
+    <color name="colorWarning">#ee8528</color>
+
+
+</resources>

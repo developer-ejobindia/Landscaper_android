@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Landscaper</string>
+    <string name="splashtext">on demand lawn care \n and home solutions.</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign in</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google +</string>
+    <string name="clickhere"><u>click here</u></string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="emailid">Email</string>
+    <string name="phoneno">Phone Number</string>
+    <string name="dateofbirth">Date of Birth</string>
+    <string name="location">Street/Location</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="country">Country</string>
+    <string name="confpassword">Confirm Password</string>
+    <string name="signup">Sign Up</string>
+    <string name="help">Help</string>
+    <string name="mesaage">Message</string>
+    <string name="home">Home</string>
+    <string name="seazoned">Seazoned</string>
+    <string name="profiledetails">Profile Details</string>
+    <string name="editproofile">Edit Profile</string>
+    <string name="editprof">Edit Profile</string>
+    <string name="saveprof">Save Profile</string>
+    <string name="mowingEdging">Mowing\n&amp; Edging</string>
+    <string name="leafremoval">Leaf\nRemoval</string>
+    <string name="lawntreatment">Lawn\nTreatment</string>
+    <string name="aeration">Aeration</string>
+    <string name="sprinkler">Sprinkler\nWinterizing</string>
+    <string name="poolcleaning">Pool Cleaning\n&amp; Upkeep</string>
+    <string name="snowremoval">Snow Removal</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="internectconnectionerror">No internet connection.</string>
+    <string name="networkerror">Network error</string>
+    <string name="cellphone">Cell Phone</string>
+    <string name="acerage">Acreage</string>
+    <string name="pricingPreview"><u>Pricing Preview</u></string>
+    <string name="hidingPreview"><u>Hide Preview</u></string>
+    <string name="logout">Do you want to logout?</string>
+    <string name="facebook_app_id">296918187570986</string>
+    <!--
+    <string name="facebook_app_id">245908252649927</string>
+-->
+    <string name="server_client_id">806611022850-biinag8e4qbqunmnidnmqj0e6kgpnsdr.apps.googleusercontent.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="createPaypal"><u>Create PayPal account</u></string>
+    <string name="hintPrice">(-$0.00)</string>
+    <string name="faq">Faq</string>
+    <string name="upperLimit">What is the max number of acres you are willing to service per job?</string>
+
+
+</resources>

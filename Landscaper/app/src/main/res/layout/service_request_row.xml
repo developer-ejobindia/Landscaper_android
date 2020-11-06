@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/lnServiceRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                android:layout_width="0dp"
+                android:id="@+id/tvServiceName"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorFlatRed"
+                android:textSize="18sp" />
+
+            <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvServicePrice"
+                android:textColor="@color/colorActiveNavText"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="top"
+                android:orientation="vertical"
+                android:paddingRight="10dp">
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvName"
+                    android:textColor="@color/colorText"
+                    android:textSize="16sp" />
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvAddress"
+                    android:textColor="@color/colorText"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:orientation="vertical">
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Service Date"
+                    android:textColor="@color/colorText"
+                    android:textSize="14sp" />
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:id="@+id/tvServiceDate"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Preferred Time"
+                    android:textColor="@color/colorText"
+                    android:textSize="14sp" />
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvTime"
+                    android:textColor="@color/colorText"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/decline_btn_shape"
+                android:gravity="center"
+                android:text="Decline"
+                android:id="@+id/tvDecline"
+                android:textColor="@color/colorText"
+                android:textSize="16sp" />
+
+
+            <View
+                android:layout_width="16dp"
+                android:layout_height="2dp" />
+
+            <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:id="@+id/tvAccept"
+                android:layout_weight="1"
+                android:background="@drawable/green_gradient_round"
+                android:gravity="center"
+                android:text="Accept"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorUnderLine" />
+
+    </LinearLayout>
+</layout>

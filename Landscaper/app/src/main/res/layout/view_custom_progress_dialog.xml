@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@null">
+
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#00ffffff"
+        android:layout_gravity="center"
+        >
+
+        <!--<ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:indeterminateDrawable="@drawable/com_progress_big" />-->
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/tripper_progress"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:visibility="visible"
+            app:indicator="BallSpinFadeLoader"
+            app:indicator_color="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+
+
+    <!--<ProgressBar
+        android:id="@+id/loading_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/HeaderColor"
+        android:layout_gravity="center" />-->
+
+    <!-- <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+         android:id="@+id/progressBar"
+         android:layout_width="60dp"
+         android:layout_height="60dp"/>-->
+    <!--<com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+        android:id="@+id/progressBar"
+
+        app:mlpb_show_arrow="true"
+        app:mlpb_arrow_height="5dp"
+        app:mlpb_arrow_width="10dp"
+        app:mlpb_enable_circle_background="true"
+
+        app:mlpb_progress_stoke_width="5dp"
+        app:mlpb_progress_text_visibility="visible"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>-->
+
+
+</LinearLayout>

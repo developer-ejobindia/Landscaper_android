@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingBottom="25dp"
+        android:paddingTop="16dp"
+        android:text="Add a Service"
+        android:textColor="@color/colorText"
+        android:textSize="18sp" />
+
+    <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content"
+        android:text="Select a Service*"
+        android:textColor="@color/colorLabel"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spService"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+    <View
+        android:layout_marginTop="10dp"
+        android:background="@color/colorUnderLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/decline_btn_shape"
+            android:gravity="center"
+            android:text="Cancel"
+            android:id="@+id/tvCancel"
+            android:textColor="@color/colorText"
+            android:textSize="16sp" />
+
+
+        <View
+            android:layout_width="16dp"
+            android:layout_height="2dp" />
+
+        <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:id="@+id/tvOk"
+            android:layout_weight="1"
+            android:background="@drawable/green_gradient_round"
+            android:gravity="center"
+            android:text="Ok"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

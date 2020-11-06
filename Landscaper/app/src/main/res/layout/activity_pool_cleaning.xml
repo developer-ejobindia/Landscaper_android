@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp">
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pool Water Type"
+                    android:textColor="@color/colorActiveNavText"
+                    android:textSize="15sp" />
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Chlorine Price Add on"
+                    android:textColor="@color/colorLabel"
+                    android:textSize="14sp" />
+
+                <com.seazoned.landscaper.customtext.Custom_EditText
+                    android:id="@+id/etChlorine"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:maxLines="1"
+                    android:textColor="@color/colorText"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorUnderLine" />
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Saline Price Add on"
+                    android:textColor="@color/colorLabel"
+                    android:textSize="14sp" />
+
+                <com.seazoned.landscaper.customtext.Custom_EditText
+                    android:id="@+id/etSaline"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:maxLines="1"
+                    android:textColor="@color/colorText"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorUnderLine" />
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Include Spa/Hot Tub Price"
+                    android:textColor="@color/colorActiveNavText"
+                    android:textSize="15sp" />
+
+                <com.seazoned.landscaper.customtext.Custom_EditText
+                    android:id="@+id/etHotTub"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:maxLines="1"
+                    android:textColor="@color/colorText"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorUnderLine" />
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Pool Type"
+                    android:textColor="@color/colorActiveNavText"
+                    android:textSize="15sp" />
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Inground up to 20,000 gal base price"
+                    android:textColor="@color/colorLabel"
+                    android:textSize="14sp" />
+
+                <com.seazoned.landscaper.customtext.Custom_EditText
+                    android:id="@+id/etInground"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:maxLines="1"
+                    android:textColor="@color/colorText"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorUnderLine" />
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Above Ground up to 5,000 gal base price"
+                    android:textColor="@color/colorLabel"
+                    android:textSize="14sp" />
+
+                <com.seazoned.landscaper.customtext.Custom_EditText
+                    android:id="@+id/etAboveGround"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:maxLines="1"
+                    android:textColor="@color/colorText"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorUnderLine" />
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="State of Pool"
+                    android:textColor="@color/colorActiveNavText"
+                    android:textSize="15sp" />
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Relatively Clear Price (Most keep @ ($0.00)"
+                    android:textColor="@color/colorLabel"
+                    android:textSize="14sp" />
+
+                <com.seazoned.landscaper.customtext.Custom_EditText
+                    android:id="@+id/etClear"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:maxLines="1"
+                    android:textColor="@color/colorText"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorUnderLine" />
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Moderately Cloudy Price"
+                    android:textColor="@color/colorLabel"
+                    android:textSize="14sp" />
+
+                <com.seazoned.landscaper.customtext.Custom_EditText
+                    android:id="@+id/etCloudy"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:maxLines="1"
+                    android:textColor="@color/colorText"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorUnderLine" />
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Heavy Algae present Price"
+                    android:textColor="@color/colorLabel"
+                    android:textSize="14sp" />
+
+                <com.seazoned.landscaper.customtext.Custom_EditText
+                    android:id="@+id/etHeavy"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:maxLines="1"
+                    android:textColor="@color/colorText"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorUnderLine" />
+                <CheckBox
+                    android:id="@+id/cbCheckRecurring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Recurring services"
+                    android:textColor="@color/colorLabel"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorUnderLine" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:id="@+id/lnRecurring"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enter the discounted amount you would like to have subtracted from total base price."
+                        android:textColor="@color/colorLabel"
+                        android:textSize="14sp" />
+                    <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Example: Regular price $25, Every 7 days (-$5.00) Now 7 day Recurring =($20.00)"
+                        android:textColor="@color/colorWarning"
+                        android:textSize="14sp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Every 7 days(-$)"
+                            android:textColor="@color/colorActiveNavText"
+                            android:textSize="16sp" />
+
+                        <com.seazoned.landscaper.customtext.Custom_EditText
+                            android:id="@+id/etSevenDays"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/colorWhite"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal|numberSigned"
+                            android:maxLines="1"
+                            android:hint="@string/hintPrice"
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/colorUnderLine" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Every 10 days(-$)"
+                            android:textColor="@color/colorActiveNavText"
+                            android:textSize="16sp" />
+
+                        <com.seazoned.landscaper.customtext.Custom_EditText
+                            android:id="@+id/etTenDays"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/colorWhite"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal|numberSigned"
+                            android:maxLines="1"
+                            android:hint="@string/hintPrice"
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/colorUnderLine" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Every 14 days(-$)"
+                            android:textColor="@color/colorActiveNavText"
+                            android:textSize="16sp" />
+
+                        <com.seazoned.landscaper.customtext.Custom_EditText
+                            android:id="@+id/etFourteenDays"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/colorWhite"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal|numberSigned"
+                            android:hint="@string/hintPrice"
+                            android:maxLines="1"
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/colorUnderLine" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                    android:id="@+id/tvPricingPrev"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/pricingPreview"
+                    android:textColor="@color/colorActiveNavText"
+                    android:textSize="15sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:id="@+id/lnPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+        <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+            android:id="@+id/tvSave"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/signin_gradient"
+            android:gravity="center"
+            android:text="save"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+    </LinearLayout>
+</layout>

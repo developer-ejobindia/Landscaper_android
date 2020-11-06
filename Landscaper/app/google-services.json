@@ -1,0 +1,129 @@
+{
+  "project_info": {
+    "project_number": "806611022850",
+    "firebase_url": "https://seazoned-2470f.firebaseio.com",
+    "project_id": "seazoned-2470f",
+    "storage_bucket": "seazoned-2470f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806611022850:android:436bf5fb9768b64f",
+        "android_client_info": {
+          "package_name": "com.seazoned"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806611022850-332g4da0ofip0cd1l66ovh9cr3n6p97h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.seazoned",
+            "certificate_hash": "564ec74d215a45df93d3f5b19990a128e62abca7"
+          }
+        },
+        {
+          "client_id": "806611022850-vc2lf7ds1c1bunrq7as69h9ds8fu0c7u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.seazoned",
+            "certificate_hash": "384ac9bced759eda1d9fc66af9218aafb0c04861"
+          }
+        },
+        {
+          "client_id": "806611022850-nf9tbpu1foe6i4mp9pjnads1rb90haeu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEqDq2HamNlp-MjYV2MswCcjCderfFNf0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806611022850-nf9tbpu1foe6i4mp9pjnads1rb90haeu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "806611022850-uu6eiolofsknmlfe2o177dirnnskos09.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "app.sealand.com"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806611022850:android:d10c2a94208a6a86",
+        "android_client_info": {
+          "package_name": "com.seazoned.landscaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806611022850-3cpte46tuh6p9b5jurnhc8072t6flf93.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.seazoned.landscaper",
+            "certificate_hash": "564ec74d215a45df93d3f5b19990a128e62abca7"
+          }
+        },
+        {
+          "client_id": "806611022850-biinag8e4qbqunmnidnmqj0e6kgpnsdr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.seazoned.landscaper",
+            "certificate_hash": "dbb5ba17741da505c7ee1b70066de47560f1f6da"
+          }
+        },
+        {
+          "client_id": "806611022850-nf9tbpu1foe6i4mp9pjnads1rb90haeu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEqDq2HamNlp-MjYV2MswCcjCderfFNf0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806611022850-nf9tbpu1foe6i4mp9pjnads1rb90haeu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "806611022850-uu6eiolofsknmlfe2o177dirnnskos09.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "app.sealand.com"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

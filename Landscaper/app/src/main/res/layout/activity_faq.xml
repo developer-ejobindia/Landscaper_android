@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+        <WebView
+            android:id="@+id/faqWebView"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></WebView>
+
+        <!--<LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/lnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:src="@drawable/ic_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Faq"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcvFaqList"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fillViewport="true">
+
+            </android.support.v7.widget.RecyclerView>
+            <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                android:id="@+id/tvAlert"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="No data found."
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorText"
+                android:layout_weight="1"
+                android:fillViewport="true">
+
+            </com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold>
+
+
+        </LinearLayout>-->
+
+        <fragment
+            android:id="@+id/footerFragment"
+            android:name="com.seazoned.landscaper.view.fragment.FootrFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout="@layout/footer_fragment" />
+
+    </LinearLayout>
+
+</layout>

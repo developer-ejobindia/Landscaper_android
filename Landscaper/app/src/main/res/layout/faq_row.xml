@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/lnMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                android:layout_width="wrap_content"
+                android:id="@+id/tvQuestions"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:textSize="16sp" />
+
+            <com.seazoned.landscaper.customtext.Custom_Text_View
+                android:id="@+id/tvAnswer"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <View
+            android:background="@color/colorUnderLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="Help"
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/tvHelp"
+            android:textSize="18sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:visibility="gone"
+            android:background="@color/colorUnderLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorText"
+            android:text="Faq"
+            android:gravity="center"
+            android:id="@+id/tvFaq"
+            android:textSize="18sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</layout>

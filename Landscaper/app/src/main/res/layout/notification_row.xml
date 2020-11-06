@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/lnMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/ivPrfpic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/temp"
+            app:siBorderColor="#dadada"
+            app:siBorderWidth="2dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+
+            <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                android:id="@+id/tvNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLabel"
+                android:textSize="14sp" />
+
+            <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                android:id="@+id/tvNotificationTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018-08-20 10.13"
+                android:textColor="@color/colorLabel"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="14dp"
+                android:src="@mipmap/paypal" />
+
+            <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paypal account"
+                android:textColor="@color/colorLabel"
+                android:textSize="16sp" />
+
+            <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="abc@paypal.com"
+                android:textColor="@color/colorText"
+                android:textSize="16sp" />
+
+            <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Account Holder Name"
+                android:textColor="@color/colorLabel"
+                android:textSize="16sp" />
+
+            <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mike Williams"
+                android:textColor="@color/colorText"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                    android:id="@+id/tvChangeAccount"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/green_gradient_round"
+                    android:gravity="center"
+                    android:text="Change Account"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+                <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                    android:id="@+id/tvRemoveAccount"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/signin_gradient"
+                    android:gravity="center"
+                    android:text="Remove Account"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</layout>

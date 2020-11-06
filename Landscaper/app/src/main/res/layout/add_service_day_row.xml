@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cbDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lnStartTime"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.seazoned.landscaper.customtext.Custom_Text_View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:hint="hh:mm"
+                android:id="@+id/tvStartTime"
+                android:textColor="@color/colorText"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorUnderLine" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lnEndTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.seazoned.landscaper.customtext.Custom_Text_View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:id="@+id/tvEndTime"
+                android:hint="hh:mm"
+                android:textColor="@color/colorText"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorUnderLine" />
+        </LinearLayout>
+        <com.seazoned.landscaper.customtext.Custom_Text_View
+            android:layout_width="wrap_content"
+            android:id="@+id/tvHideStartTime"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+        <com.seazoned.landscaper.customtext.Custom_Text_View
+            android:layout_width="wrap_content"
+            android:id="@+id/tvHideEndTime"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</layout>

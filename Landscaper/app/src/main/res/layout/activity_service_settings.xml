@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/lnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_left" />
+            </LinearLayout>
+
+            <com.seazoned.landscaper.customtext.Custom_Text_View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Service Settings"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/top_left_right_round_corner"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp">
+                    <!---->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Services"
+                            android:textColor="@color/colorLabel"
+                            android:textSize="16sp" />
+
+                        <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                            android:id="@+id/tvAddService"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:drawableLeft="@drawable/ic_add"
+                            android:drawablePadding="10dp"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:text="Add New Service"
+                            android:textAllCaps="true"
+                            android:textColor="#0192ff"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                    <!---->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorUnderLine" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rcvServiceList"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Business Name"
+                            android:textColor="@color/colorActiveNavText"
+                            android:textSize="16sp" />
+
+                        <com.seazoned.landscaper.customtext.Custom_EditText
+                            android:id="@+id/etProvidername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/colorWhite"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/colorUnderLine" />
+                    </LinearLayout>
+
+
+                    <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Description"
+                        android:textColor="@color/colorActiveNavText"
+                        android:textSize="16sp" />
+
+                    <com.seazoned.landscaper.customtext.Custom_EditText
+                        android:id="@+id/etDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/gray_squre_shape"
+                        android:gravity="left|top"
+                        android:minHeight="60dp"
+                        android:padding="5dp"
+                        android:textSize="14sp" />
+
+
+                    <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Service Hours"
+                        android:textColor="@color/colorActiveNavText"
+                        android:textSize="16sp" />
+                    <!--day header-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                                android:id="@+id/cbDay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Day"
+                                android:textColor="@color/colorLabel"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                                android:id="@+id/tvStartTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Start Time"
+                                android:textColor="@color/colorLabel"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                                android:id="@+id/tvEndTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="End Time"
+                                android:textColor="@color/colorLabel"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <!--end day header-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/colorUnderLine" />
+
+                    <LinearLayout
+                        android:id="@+id/lnDayList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Distance you are willing to travel (1-50 miles)"
+                            android:textColor="@color/colorActiveNavText"
+                            android:textSize="16sp" />
+
+                        <com.seazoned.landscaper.customtext.Custom_EditText
+                            android:id="@+id/etDistance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/colorWhite"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionDone"
+                            android:inputType="numberDecimal|numberSigned"
+                            android:maxLines="1"
+                            android:hint="0"
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/colorUnderLine" />
+                    </LinearLayout>
+
+
+
+                    <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                        android:id="@+id/tvFinish"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/signin_gradient"
+                        android:gravity="center"
+                        android:text="Update"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <fragment
+            android:id="@+id/footerFragment"
+            android:name="com.seazoned.landscaper.view.fragment.FootrFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout="@layout/footer_fragment" />
+
+    </LinearLayout>
+
+</layout>

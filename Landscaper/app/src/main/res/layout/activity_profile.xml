@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/mainLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:background="@drawable/green_gradient"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:id="@+id/lnMenu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_menu" />
+                        </LinearLayout>
+
+                        <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/seazoned"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="22sp" />
+
+                        <LinearLayout
+                            android:id="@+id/lnNotificationBell"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_bell" />
+
+                                <ImageView
+                                    android:id="@+id/ivNotiDot"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:src="@drawable/ic_dot_red"
+                                    android:visibility="gone" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <FrameLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+                        <com.seazoned.landscaper.other.RoundRectCornerImageView
+                            android:id="@+id/ivFeatureImage"
+                            android:fitsSystemWindows="true"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/featurepic"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                        <LinearLayout
+                            android:id="@+id/lnFeatureImage"
+                            android:paddingRight="25dp"
+                            android:paddingLeft="25dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:gravity="center"
+                            android:layout_gravity="bottom|right"
+                            android:background="#87000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:src="@drawable/ic_camera"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:fillViewport="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorWhite"
+                            android:orientation="vertical"
+                            android:paddingBottom="80dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp">
+
+                                <LinearLayout
+                                    android:id="@+id/lnViewProfile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingBottom="20dp"
+                                    android:paddingTop="20dp">
+
+                                    <com.github.siyamed.shapeimageview.CircularImageView
+                                        app:siBorderColor="#dadada"
+                                        app:siBorderWidth="2dp"
+                                        android:id="@+id/ivProfilePic"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:src="@mipmap/temp"
+                                        android:scaleType="centerCrop"
+                                        />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="15dp">
+
+                                        <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/tvName"
+                                            android:textColor="@color/colorProfileText"
+                                            android:textSize="18sp" />
+
+                                        <com.seazoned.landscaper.customtext.Custom_Text_View
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="View your profile"
+                                            android:textColor="@color/colorProfileText"
+                                            android:textSize="16sp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/colorUnderLine" />
+
+                                <LinearLayout
+                                    android:id="@+id/lnServiceSettings"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingBottom="10dp"
+                                    android:paddingTop="20dp">
+
+                                    <LinearLayout
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:background="@drawable/circle_address_book"
+                                        android:backgroundTint="#0192ff"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_repairing_service" />
+
+
+                                    </LinearLayout>
+
+                                    <com.seazoned.landscaper.customtext.Custom_Text_View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15dp"
+                                        android:text="Service Settings"
+                                        android:textColor="@color/colorProfileText"
+                                        android:textSize="18sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lnBookingHistory"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingBottom="10dp"
+                                    android:paddingTop="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:background="@drawable/circle_booking_history"
+                                        android:backgroundTint="#fe4a65"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_history" />
+
+                                    </LinearLayout>
+
+                                    <com.seazoned.landscaper.customtext.Custom_Text_View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15dp"
+                                        android:text="Job History"
+                                        android:textColor="@color/colorProfileText"
+                                        android:textSize="18sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lnPayment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingBottom="10dp"
+                                    android:paddingTop="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:background="@drawable/circle_paymentinfo"
+                                        android:backgroundTint="#0192ff"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_payment" />
+
+                                    </LinearLayout>
+
+                                    <com.seazoned.landscaper.customtext.Custom_Text_View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15dp"
+                                        android:text="Payment Info"
+                                        android:textColor="@color/colorProfileText"
+                                        android:textSize="18sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lnLogout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingBottom="10dp"
+                                    android:paddingTop="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:background="@drawable/circle_logout"
+                                        android:backgroundTint="#fe4a65"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_logout" />
+
+                                    </LinearLayout>
+
+                                    <com.seazoned.landscaper.customtext.Custom_Text_View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15dp"
+                                        android:text="Logout"
+                                        android:textColor="@color/colorProfileText"
+                                        android:textSize="18sp" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v4.widget.NestedScrollView>
+
+
+                </LinearLayout>
+
+                <fragment
+                    android:id="@+id/footerFragment"
+                    android:name="com.seazoned.landscaper.view.fragment.FootrFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout="@layout/footer_fragment" />
+            </FrameLayout>
+            <fragment
+                android:layout_gravity="start"
+                android:id="@+id/sliderFrag"
+                android:name="com.seazoned.landscaper.view.fragment.LeftDrawer"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"/>
+
+        </android.support.v4.widget.DrawerLayout>
+
+    </LinearLayout>
+
+</layout>

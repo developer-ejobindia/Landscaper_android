@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/popup"
+    android:background="#000000"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivImageRow"
+        android:layout_gravity="center"
+        android:minHeight="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_cancel"
+        android:id="@+id/ivCancel"
+        android:layout_gravity="end"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+</FrameLayout>

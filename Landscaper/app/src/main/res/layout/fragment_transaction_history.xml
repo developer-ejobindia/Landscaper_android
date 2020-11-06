@@ -1,0 +1,46 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.seazoned.landscaper.view.fragment.TransactionHistoryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Total payment receive"
+                    android:textColor="@color/colorLabel"
+                    android:textSize="14sp" />
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/tvPaymentReceive"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcvTransactionList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

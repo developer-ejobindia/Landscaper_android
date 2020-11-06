@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/mainLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:background="@drawable/green_gradient"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:id="@+id/lnMenu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_menu" />
+                        </LinearLayout>
+
+                        <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/seazoned"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="22sp" />
+
+                        <LinearLayout
+                            android:id="@+id/lnNotificationBell"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_bell" />
+                                <ImageView
+                                    android:id="@+id/ivNotiDot"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_dot_red"
+                                    android:layout_gravity="right"
+                                    android:visibility="gone"/>
+                            </FrameLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/top_left_right_round_corner"
+                            android:orientation="vertical"
+                            android:paddingBottom="80dp"
+                            android:paddingLeft="0dp"
+                            android:paddingRight="0dp">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rcvChatList"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </android.support.v7.widget.RecyclerView>
+                            <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                                android:id="@+id/tvAlert"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="No data found."
+                                android:textSize="16sp"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <fragment
+                    android:id="@+id/footerFragment"
+                    android:name="com.seazoned.landscaper.view.fragment.FootrFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout="@layout/footer_fragment" />
+            </FrameLayout>
+            <fragment
+                android:layout_gravity="start"
+                android:id="@+id/sliderFrag"
+                android:name="com.seazoned.landscaper.view.fragment.LeftDrawer"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"/>
+
+        </android.support.v4.widget.DrawerLayout>
+
+    </LinearLayout>
+
+</layout>

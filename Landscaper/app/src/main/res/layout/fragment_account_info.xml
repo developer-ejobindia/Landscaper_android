@@ -1,0 +1,296 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.seazoned.landscaper.view.fragment.AccountInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="25dp"
+                            android:background="@mipmap/paypal" />
+                    </LinearLayout>
+
+                    <com.seazoned.landscaper.customtext.Custom_Text_View_Light
+                        android:id="@+id/tvMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="To Received Payment,Please Submit Your Paypal Account Id"
+                        android:textColor="@color/colorProgress"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnAddAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name of Account Holder"
+                            android:textColor="@color/colorLabel"
+                            android:textSize="16sp" />
+
+                        <com.seazoned.landscaper.customtext.Custom_EditText
+                            android:id="@+id/etAccountHolderName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/colorWhite"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/colorUnderLine" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Paypal Account User Name"
+                            android:textColor="@color/colorLabel"
+                            android:textSize="16sp" />
+
+                        <com.seazoned.landscaper.customtext.Custom_EditText
+                            android:id="@+id/etPaypalUserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/colorWhite"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/colorUnderLine" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Paypal Account ID"
+                            android:textColor="@color/colorLabel"
+                            android:textSize="16sp" />
+
+                        <com.seazoned.landscaper.customtext.Custom_EditText
+                            android:id="@+id/etPaypalAccountId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/colorWhite"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/colorUnderLine" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Paypal Api Password"
+                            android:textColor="@color/colorLabel"
+                            android:textSize="16sp" />
+
+                        <com.seazoned.landscaper.customtext.Custom_EditText
+                            android:id="@+id/etPaypalPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/colorWhite"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/colorUnderLine" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Paypal Api Signature"
+                            android:textColor="@color/colorLabel"
+                            android:textSize="16sp" />
+
+                        <com.seazoned.landscaper.customtext.Custom_EditText
+                            android:id="@+id/etPaypalSignature"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/colorWhite"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/colorUnderLine" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnViewAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="Account Holder Name"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="17sp" />
+
+                    <com.seazoned.landscaper.customtext.Custom_Text_View
+                        android:id="@+id/tvAccountHolderName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:textColor="@color/colorLabel"
+                        android:textSize="17sp" />
+
+                    <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="Paypal Account"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="17sp" />
+
+                    <com.seazoned.landscaper.customtext.Custom_Text_View
+                        android:id="@+id/tvAccountId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:textColor="@color/colorLabel"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp">
+
+                    <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                        android:id="@+id/tvSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/green_gradient_round"
+                        android:gravity="center"
+                        android:text="submit"
+                        android:textAllCaps="true"
+
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <com.seazoned.landscaper.customtext.Custom_Text_View_SemiBold
+                    android:id="@+id/tvCreatePaypal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="@string/createPaypal"
+                    android:textColor="@color/colorText"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

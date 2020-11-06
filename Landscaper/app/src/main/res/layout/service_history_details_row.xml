@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:id="@+id/tvTitle1"
+                android:textColor="@color/colorText"
+                android:textSize="14sp" />
+
+            <com.seazoned.landscaper.customtext.Custom_Text_View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:drawablePadding="5dp"
+                android:id="@+id/tvValue1"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorLabel"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.seazoned.landscaper.customtext.Custom_Text_View_Bold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:id="@+id/tvTitle2"
+                android:textColor="@color/colorText"
+                android:textSize="14sp" />
+
+            <com.seazoned.landscaper.customtext.Custom_Text_View
+                android:id="@+id/tvValue2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorLabel"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>
